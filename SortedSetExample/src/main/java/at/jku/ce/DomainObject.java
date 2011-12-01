@@ -12,6 +12,7 @@ public class DomainObject {
 		super();
 	}
 	
+	
 	protected DomainObject(String id, String comment) { 
 		super(); 
 		this.uuid = id; 
