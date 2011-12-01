@@ -2,7 +2,7 @@ package at.jku.ce;
 
 public class DomainObject {
 
-	public String uuid = UUID.randomUUID().toString(); 
+	private String uuid = UUID.randomUUID().toString(); 
 	
 	private String name;
 	
