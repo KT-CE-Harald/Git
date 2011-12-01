@@ -12,11 +12,11 @@ public class Main {
 		
 		Set<DomainObject> objectSet = new HashSet<DomainObject>();
 
-		objectSet.add(new DomainObject("Helga","bla"));
-		objectSet.add(new DomainObject("Walter","bla"));
-		objectSet.add(new DomainObject("Hans","bla"));
-		objectSet.add(new DomainObject("Paula","bla"));
-		objectSet.add(new DomainObject("Claudia","bla"));
+		objectSet.add(DomainFactory.createDomainObject("Helga","bla"));
+		objectSet.add(DomainFactory.createDomainObject("Walter","bla"));
+		objectSet.add(DomainFactory.createDomainObject("Hans","bla"));
+		objectSet.add(DomainFactory.createDomainObject("Paula","bla"));
+		objectSet.add(DomainFactory.createDomainObject("Claudia","bla"));
 
 		for (DomainObject domainObject : objectSet) {
 			LOGGER.debug(domainObject.id);
