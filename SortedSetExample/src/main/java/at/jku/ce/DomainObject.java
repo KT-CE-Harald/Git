@@ -8,16 +8,16 @@ public class DomainObject {
 	
 	/** * Default constructor */
 	
-	public DomainObject() {
+	protected DomainObject() {
 		super();
 	}
 	
-	public DomainObject(String id, String comment) { 
+	protected DomainObject(String id, String comment) { 
 		super(); 
 		this.uuid = id; 
 	}
 	
-	public String getUuId() {
+	protected String getUuId() {
 		return uuid;
 	}
 	
