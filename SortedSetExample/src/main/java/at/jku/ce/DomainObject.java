@@ -17,6 +17,7 @@ public class DomainObject {
 		this.uuid = id; 
 	}
 	
+	
 	public String getUuId() {
 		return uuid;
 	}
