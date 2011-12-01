@@ -10,16 +10,16 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		Set<DomainObject> objectSet = new HashSet<DomainObject>();
+		Set<DomainObject> objectSet = new TreeSet<DomainObject>(new DomainObjectComparator());
 
-		objectSet.add(new DomainObject("Helga"));
-		objectSet.add(new DomainObject("Walter"));
-		objectSet.add(new DomainObject("Hans"));
-		objectSet.add(new DomainObject("Paula"));
-		objectSet.add(new DomainObject("Claudia"));
+		objectSet.add(new DomainObject("Helga","bla"));
+		objectSet.add(new DomainObject("Walter","bla"));
+		objectSet.add(new DomainObject("Hans","bla"));
+		objectSet.add(new DomainObject("Paula","bla"));
+		objectSet.add(new DomainObject("Claudia","bla"));
 
 		for (DomainObject domainObject : objectSet) {
-			LOGGER.debug(domainObject.id);
+			LOGGER.debug(domainObject.toString());
 		}
 		
 	}
