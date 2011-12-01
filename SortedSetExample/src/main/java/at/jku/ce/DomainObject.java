@@ -20,5 +20,15 @@ public class DomainObject {
 	public String getUuId() {
 		return uuid;
 	}
+	
+	private String comment;
+
+	public String getComment() {
+		return comment;
+	}
+
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
 
 }
