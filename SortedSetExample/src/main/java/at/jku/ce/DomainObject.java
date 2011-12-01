@@ -18,7 +18,7 @@ public class DomainObject {
 		this.uuid = id; 
 	}
 	
-
+	
 	protected String getUuId() {
 		return uuid;
 	}
@@ -41,4 +41,8 @@ public class DomainObject {
 		this.name = pname;
 	}
 
+	public String toString() {
+		return "DomainObject [name=" + name + ", comment=" + comment
+				+ ", uuid=" + uuid + "]";
+	}
 }
